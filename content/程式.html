@@ -130,7 +130,7 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
-                     <li><a href='About.html'>About</a><li><a href='group.html'>group</a><li class='has-children'><a href='pj3.html'>pj3</a><ul class='dropdown'><li><a href='程式.html'>程式</a><li><a href='會議記錄.html'>會議記錄</a><li><a href='下載專區.html'>下載專區</a></li></ul><li class='has-children'><a href='組員分工內容.html'>組員分工內容</a><ul class='dropdown'><li><a href='40723217-pj3.html'>40723217-pj3</a><li><a href='40923219-pj3.html'>40923219-pj3</a><li><a href='40923225-pj3.html'>40923225-pj3</a><li><a href='40923241-pj3.html'>40923241-pj3</a><li class='has-children'><a href='40923246-pj3.html'>40923246-pj3</a><ul class='dropdown'><li><a href='40923246-程式.html'>40923246-程式</a></li></ul><li><a href='40971219-pj3.html'>40971219-pj3</a><li><a href='40971220-pj3.html'>40971220-pj3</a></li></ul><li class='has-children'><a href='Brython.html'>Brython</a><ul class='dropdown'><li><a href='Brython_ex2.html'>Brython_ex2</a></li>
+                     <li><a href='About.html'>About</a><li><a href='final.html'>final</a><li><a href='group.html'>group</a><li class='has-children'><a href='pj3.html'>pj3</a><ul class='dropdown'><li><a href='程式.html'>程式</a><li><a href='會議記錄.html'>會議記錄</a><li><a href='下載專區.html'>下載專區</a></li></ul><li class='has-children'><a href='組員分工內容.html'>組員分工內容</a><ul class='dropdown'><li><a href='40723217-pj3.html'>40723217-pj3</a><li><a href='40923219-pj3.html'>40923219-pj3</a><li><a href='40923225-pj3.html'>40923225-pj3</a><li><a href='40923241-pj3.html'>40923241-pj3</a><li class='has-children'><a href='40923246-pj3.html'>40923246-pj3</a><ul class='dropdown'><li><a href='40923246-程式.html'>40923246-程式</a></li></ul><li><a href='40971219-pj3.html'>40971219-pj3</a><li><a href='40971220-pj3.html'>40971220-pj3</a></li></ul><li class='has-children'><a href='Brython.html'>Brython</a><ul class='dropdown'><li><a href='Brython_ex2.html'>Brython_ex2</a></li>
                       </ul>
                 </nav>
               </div>
@@ -185,10 +185,8 @@ img.add_border {
     pos7 = {-1,0.5,0.2}
     pos8 = {-0.5,1,0.2}
     posS = {0,0,0.2}
-    ang1 = {1.57,0,0}
+    ang1 = {0,0,0}
     ang2 = {0,0,3.14}
-    ang3 = {0,-1.57,-1.57}
-    ang4 = {0,0,0}
     bubbleRobBase = 4
     
     score1 = 0
@@ -337,7 +335,7 @@ function sysCall_actuation()
     end 
     if(r2&gt;0 and result&gt;0)then
         sim.setObjectPosition(ball, -1, posS)
-        sim.setObjectOrientation(ball, -1, ang4)
+        sim.setObjectOrientation(ball, -1, ang1)
         sim.setObjectPosition(bubbleRob1, -1, pos1)
         sim.setObjectPosition(bubbleRob2, -1, pos2)
         sim.setObjectPosition(bubbleRob3, -1, pos3)
@@ -346,10 +344,10 @@ function sysCall_actuation()
         sim.setObjectPosition(bubbleRob6, -1, pos6)
         sim.setObjectPosition(bubbleRob7, -1, pos7)
         sim.setObjectPosition(bubbleRob8, -1, pos8)
-        sim.setObjectOrientation(bubbleRob1, -1, ang3)
+        sim.setObjectOrientation(bubbleRob1, -1, ang1)
         sim.setObjectOrientation(bubbleRob2, -1, ang1)
         sim.setObjectOrientation(bubbleRob3, -1, ang1)
-        sim.setObjectOrientation(bubbleRob4, -1, ang4)
+        sim.setObjectOrientation(bubbleRob4, -1, ang1)
         sim.setObjectOrientation(bubbleRob5, -1, ang2)
         sim.setObjectOrientation(bubbleRob6, -1, ang2)
         sim.setObjectOrientation(bubbleRob7, -1, ang2)
@@ -427,7 +425,7 @@ function sysCall_actuation()
     result2 = sim.readProximitySensor(sensor2)
     if(r4&gt;0 and result2&gt;0)then
         sim.setObjectPosition(ball, -1, posS)
-        sim.setObjectOrientation(ball, -1, ang4)
+        sim.setObjectOrientation(ball, -1, ang1)
         sim.setObjectPosition(bubbleRob1, -1, pos1)
         sim.setObjectPosition(bubbleRob2, -1, pos2)
         sim.setObjectPosition(bubbleRob3, -1, pos3)
@@ -436,10 +434,10 @@ function sysCall_actuation()
         sim.setObjectPosition(bubbleRob6, -1, pos6)
         sim.setObjectPosition(bubbleRob7, -1, pos7)
         sim.setObjectPosition(bubbleRob8, -1, pos8)
-        sim.setObjectOrientation(bubbleRob1, -1, ang3)
+        sim.setObjectOrientation(bubbleRob1, -1, ang1)
         sim.setObjectOrientation(bubbleRob2, -1, ang1)
         sim.setObjectOrientation(bubbleRob3, -1, ang1)
-        sim.setObjectOrientation(bubbleRob4, -1, ang4)
+        sim.setObjectOrientation(bubbleRob4, -1, ang1)
         sim.setObjectOrientation(bubbleRob5, -1, ang2)
         sim.setObjectOrientation(bubbleRob6, -1, ang2)
         sim.setObjectOrientation(bubbleRob7, -1, ang2)

@@ -6,10 +6,8 @@
 <p>40923241 nfu40923241 <a href="http://[2001:288:6004:17:2023:cdb:1:1]:23020/">第4個</a></p>
 <p>40923246 40923246 <a href="http://[2001:288:6004:17:2023:cdb:1:1]:23020/">第5個</a></p>
 <p>40971219 40971219 <a href="http://[2001:288:6004:17:2023:cdb:1:1]:23020/">第6個</a></p>
-<p>40971220 40971220 <a href="http://[2001:288:6004:17:2023:cdb:1:1]:23020/">第7個<br/><br/></a></p>
-<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/oIVlelHfauQ" title="YouTube video player" width="560"></iframe></p>
-<p></p>
-<h1>group</h1>
+<p>40971220 40971220 <a href="http://[2001:288:6004:17:2023:cdb:1:1]:23020/">第7個<br/><br/></a></p><h1>final</h1>
+<p><iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="allowfullscreen" frameborder="0" height="315" src="https://www.youtube.com/embed/S7NHpQEAvXs" title="YouTube video player" width="560"></iframe></p><h1>group</h1>
 <p>變成學號的地方代表他沒填excel表單</p>
 <p><a href="https://github.com/nfu40723217">40723217</a> <a href="https://github.com/mdecd2023/resume-nfu40723217">resume</a> <a href="https://nfu40723217.github.io/football-bpj1">football</a> <a href="https://github.com/nfu40723217/football-bpj1">(repo)</a> <a href="https://mdecd2023.github.io/2b-pj1bg11">pj1bg11</a> <a href="https://github.com/mdecd2023/2b-pj1bg11">(repo)</a> <a href="https://mdecd2023.github.io/2b2-pj2bg1">pj2bg1</a> <a href="https://github.com/mdecd2023/2b2-pj2bg1">(repo)</a> <a href="https://mdecd2023.github.io/2b3-pj3bg1">pj3bg1 </a> <a href="https://github.com/mdecd2023/2b3-pj3bg1">(repo)</a> </p>
 <p><a href="https://github.com/a40732331">40732331</a> <a href="https://github.com/mdecd2023/resume-a40732331">resume</a> <a href="https://a40732331.github.io/football-bpj1">football</a> <a href="https://github.com/a40732331/football-bpj1">(repo)</a> <a href="https://mdecd2023.github.io/2b-pj1bg28">pj1bg28</a> <a href="https://github.com/mdecd2023/2b-pj1bg28">(repo)</a> <a href="https://mdecd2023.github.io/2b2-40732331">40732331</a> <a href="https://github.com/mdecd2023/2b2-40732331">(repo)</a> <a href="https://mdecd2023.github.io/2b3-pj3bg7">pj3bg7 </a> <a href="https://github.com/mdecd2023/2b3-pj3bg7">(repo)</a> </p>
@@ -2294,10 +2292,8 @@
     pos7 = {-1,0.5,0.2}
     pos8 = {-0.5,1,0.2}
     posS = {0,0,0.2}
-    ang1 = {1.57,0,0}
+    ang1 = {0,0,0}
     ang2 = {0,0,3.14}
-    ang3 = {0,-1.57,-1.57}
-    ang4 = {0,0,0}
     bubbleRobBase = 4
     
     score1 = 0
@@ -2446,7 +2442,7 @@ function sysCall_actuation()
     end 
     if(r2&gt;0 and result&gt;0)then
         sim.setObjectPosition(ball, -1, posS)
-        sim.setObjectOrientation(ball, -1, ang4)
+        sim.setObjectOrientation(ball, -1, ang1)
         sim.setObjectPosition(bubbleRob1, -1, pos1)
         sim.setObjectPosition(bubbleRob2, -1, pos2)
         sim.setObjectPosition(bubbleRob3, -1, pos3)
@@ -2455,10 +2451,10 @@ function sysCall_actuation()
         sim.setObjectPosition(bubbleRob6, -1, pos6)
         sim.setObjectPosition(bubbleRob7, -1, pos7)
         sim.setObjectPosition(bubbleRob8, -1, pos8)
-        sim.setObjectOrientation(bubbleRob1, -1, ang3)
+        sim.setObjectOrientation(bubbleRob1, -1, ang1)
         sim.setObjectOrientation(bubbleRob2, -1, ang1)
         sim.setObjectOrientation(bubbleRob3, -1, ang1)
-        sim.setObjectOrientation(bubbleRob4, -1, ang4)
+        sim.setObjectOrientation(bubbleRob4, -1, ang1)
         sim.setObjectOrientation(bubbleRob5, -1, ang2)
         sim.setObjectOrientation(bubbleRob6, -1, ang2)
         sim.setObjectOrientation(bubbleRob7, -1, ang2)
@@ -2536,7 +2532,7 @@ function sysCall_actuation()
     result2 = sim.readProximitySensor(sensor2)
     if(r4&gt;0 and result2&gt;0)then
         sim.setObjectPosition(ball, -1, posS)
-        sim.setObjectOrientation(ball, -1, ang4)
+        sim.setObjectOrientation(ball, -1, ang1)
         sim.setObjectPosition(bubbleRob1, -1, pos1)
         sim.setObjectPosition(bubbleRob2, -1, pos2)
         sim.setObjectPosition(bubbleRob3, -1, pos3)
@@ -2545,10 +2541,10 @@ function sysCall_actuation()
         sim.setObjectPosition(bubbleRob6, -1, pos6)
         sim.setObjectPosition(bubbleRob7, -1, pos7)
         sim.setObjectPosition(bubbleRob8, -1, pos8)
-        sim.setObjectOrientation(bubbleRob1, -1, ang3)
+        sim.setObjectOrientation(bubbleRob1, -1, ang1)
         sim.setObjectOrientation(bubbleRob2, -1, ang1)
         sim.setObjectOrientation(bubbleRob3, -1, ang1)
-        sim.setObjectOrientation(bubbleRob4, -1, ang4)
+        sim.setObjectOrientation(bubbleRob4, -1, ang1)
         sim.setObjectOrientation(bubbleRob5, -1, ang2)
         sim.setObjectOrientation(bubbleRob6, -1, ang2)
         sim.setObjectOrientation(bubbleRob7, -1, ang2)
